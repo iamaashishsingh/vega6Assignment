@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="icon" type="image/gif" sizes="32x32" href="/load.gif">
+  <title>Image Editor</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css">
+  <link rel="stylesheet" href="../../css/style.css">
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+ 
+  <section class="search-container-fluid" style="height: 60vh;">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <div class="card" id="personal-details-card">
+            
+            <div class="card-body" style="padding: 10px;background-color:  #006ff9;">
+              <blockquote class="blockquote ">
+                  <h6 style="color: snow;">
+                    <small> Submitted by-</small></h6>
+                  <h6 style="color: white;"> Name: Aashish Singh</h6>
+                 <h6 style="color: white;">Email: iamaashishsingh@gmail.com</h6>
+
+              </blockquote>
+            </div>
+          </div>
+        </div>
+        <div class="col-12" style="height: 100vh;">
+          <div id="cover">
+            <div class="wrap">
+              <div class="search">
+                <input type="text" id="searchInput" class="searchTerm" placeholder="Start Your Image Search" 
+              onkeydown="event.keyCode==13 && searchImage()"
+                >
+                <button type="submit" class="searchButton"  onclick="searchImage()">
+                  <i class="fa fa-search"></i>
+                </button>
+
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+
+    <h6 id="NotFound">  </h6>
+
+  </section>
+  <section class="image-results-section bg-primary">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-12" id="my-galary">
+          <div class="responsive" id="mycontent">
+            <div class="gallery">
+              <a  href="#">
+                <img src="../../img/placeholder_600x400.svg" alt="Cinque Terre" width="600" height="300"
+                  style="height: 200px;">
+              </a>
+              <div class="desc">
+                <a  href=""  type="button" class="btn btn-info add-caption-btn">Add Caption</a>
+              </div>
+            </div>
+          </div>
+          <div class="clearfix"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+</body>
+</html>
+
+<script src="../../js/fabric.min.js"></script>
+<script src="../../js/details-script.js"></script>

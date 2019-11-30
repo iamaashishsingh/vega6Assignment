@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="icon" type="image/gif" sizes="32x32" href="/load.gif">
+  <title>Image Editor</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css">
+  <link rel="stylesheet" href="../../css/style.css">
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+  <!-- <div class="nav-height"></div> -->
+  <!-- <nav class="main-navbar nav-height navbar">
+    <div class="container-fluid">
+      <a  class="navbar-brand px-2 mx-0"><img src="../../img/logo-nav.svg" alt="sample-logo"></a>
+      <div class="col px-0">
+        <ul class="nav justify-content-end">
+            <li class="active"><a href="/assets/pages/home/" class="nav-link" data-name="Home"></a></li>
+        </ul>
+      </div>
+    </div>
+  </nav> -->
+  <section class="canvas">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-sm-12 col-md-6 col-lg-6">
+          <canvas id="c" width="500px" height="500"
+            style="border:1px solid;margin-top: 100px;margin-left:50px;"></canvas>
+        </div>
+        <div class="col-sm-12 col-md-6 col-lg-6">
+          <div class="image-editor-controls">
+            <p style="margin-top: 100px;">
+              <!-- <button class="btn btn-primary" onclick="addTextbox()">Add textbox</button> -->
+              <div class="input-group mb-0">
+                <div class="input-group-prepend">
+                  <label class="btn btn-primary " type="button" for="inputGroupSelect01" onclick="addTextbox()">Add Caption</label>
+                </div>
+                <select class="custom-select" id="option-shape" onchange="schedule(this.value)">
+                  <option selected>Add Shape</option>
+                  <option value="1" onclick="addRect()">Rectangle</option>
+                  <option value="2" onclick="addCircle()">Circle</option>
+                  <option value="3" onclick="addTriangle()">Triangle</option>
+                  <option value="3" onclick="addPolygon()">Polygon</option>
+                </select>
+              </div>
+            </p>
+            <a id="download" class="btn btn-primary btn-md btn-block" download="myImage.jpg" href=""
+              onclick="download_img(this);">Download Image</a>
+              <a href="/assets/pages/home/" class="home-link" style="color:white">back to home</a>
+
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</body>
+
+</html>
+<script src="../../js/fabric.min.js"></script>
+<script src="../../js/details-script.js"></script>

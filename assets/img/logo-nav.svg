@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" id="Logo" width="34.15" height="31.873" viewBox="0 0 34.15 31.873">
+    <defs>
+        <style>
+            .cls-1{fill:#282828}
+        </style>
+    </defs>
+    <path id="Path_2" d="M-1856.68 56.056l-7.076 16.512V56.056h-6.584L-1884 87.929h6.83l7.083-16.527v16.527h6.577l13.66-31.873z" class="cls-1" data-name="Path 2" transform="translate(1884 -56.056)"/>
+    <path id="Path_3" d="M-1848.378 91.235l1.976 4.545h6.83l-5.391-12.514z" class="cls-1" data-name="Path 3" transform="translate(1873.722 -63.907)"/>
+    <path id="Path_4" d="M-1884 68.856v15.936l6.83-15.937z" class="cls-1" data-name="Path 4" transform="translate(1884 -59.749)"/>
+    <path id="Rectangle_3" d="M0 0h6.83v6.83H0z" class="cls-1" data-name="Rectangle 3"/>
+</svg>

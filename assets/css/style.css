@@ -1,0 +1,143 @@
+body {
+    color: #282828;
+    background-color: #006ff9;
+    
+}
+* {
+  box-sizing: border-box;
+}
+
+
+
+.search {
+    width: 100%;
+    position: relative;
+    display: flex;
+  }
+  .searchTerm {
+    width: 100%;
+    border: 3px solid #00B4CC;
+    border-right: none;
+    padding: 5px;
+    height: 46px;
+    border-radius: 5px 0 0 5px;
+    outline: none;
+    color: black;
+    font-size: 20px;;
+  }
+  .searchTerm:focus{
+      color: black;
+  }
+  
+  .searchButton {
+    width: 40px;
+    height: 46px;
+    border: 1px solid #00B4CC;
+    background: #00B4CC;
+    text-align: center;
+    color: #fff;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+    font-size: 20px;
+  }
+  
+  /*Resize the wrap to see the search bar change!*/
+  .wrap{
+    width: 40%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  #personal-details-card{
+     position: absolute;
+     left: 10px;
+     top: 80px;
+    
+    
+  }
+  .search-container{
+     height: 58vh;
+     background-color: red;
+     
+  }
+
+  div.gallery {
+    border: 1px solid #ccc;
+  }
+  
+  div.gallery:hover {
+    border: 1px solid #777;
+  }
+  
+  div.gallery img {
+    padding-top: 20px;
+    width: 100%;
+    height: auto;
+  }
+  
+  div.desc {
+    padding: 10px;
+    text-align: center;
+    width: 290px;
+    margin: auto;
+  }
+  
+  
+  
+  .responsive {
+    /* visibility: hidden; */
+    padding: 5px 6px;
+    float: left;
+    width: 24.99999%;
+  }
+  
+  @media only screen and (max-width: 700px) {
+    .responsive {
+      width: 49.99999%;
+      margin: 6px 0;
+    }
+    .wrap{
+      width: 80%;
+    }
+  }
+
+  #mycontent {
+    display: none;
+  }
+  
+  @media only screen and (max-width: 500px) {
+    .responsive {
+      width: 100%;
+    }
+    .wrap{
+      width: 80%;
+    }
+  }
+  
+  .clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  .add-caption-btn{
+    width: 100%;
+  }
+  .image-editor-controls{
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+  }
+  .home-link{
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+  }
+  #NotFound{
+    color: red;
+     position: absolute;
+     top:65vh;
+     margin-left: 40%;
+     background-color: blanchedalmond;
+  }
